@@ -1,0 +1,242 @@
+#navbar{
+  display:flex;
+  justify-content:space-around;
+}
+.navbar{
+   background-color:rgb(138, 8, 8);
+}
+.nav-link,.navbar-brand {
+  color:white;
+}
+#welcome-section{
+   display: block;
+  justify-content: space-between;
+  height: 100vh;
+  padding-top:15em;
+  background:black;
+}
+.animate-charcter:hover{
+  text-transform: uppercase;
+  background-image: radial-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 19%,
+    #ff1361 47%,
+    #fff800 100%,
+    #ff1361 147%,
+     #44107a 169%,
+     #44107a 190%,
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 300% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 5.5s ease-in-out infinite;
+  display: inline-block;
+      font-size: 70px;
+}
+
+.animate-charcter
+{
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 3.5s linear;
+  display: inline-block;
+      font-size: 70px;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 99% center;
+  }
+}
+#projects{
+  padding:50px 0;
+  
+}
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  row-gap: 30px;
+   grid-auto-rows: minmax(300px, 300px);
+
+ 
+}
+.one {
+  grid-column: 1;
+  grid-row: 1;
+   border: 1px solid;
+  padding: 10px;
+  box-shadow: 5px 10px #888888;
+  
+}
+.two {
+  position:relative;
+  grid-column: 2;
+  grid-row: 1 ;
+   border: 1px solid;
+  padding: 10px;
+  box-shadow: 5px 10px #888888;
+}
+.three {
+  grid-column: 3;
+  grid-row:1 ;
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: 5px 10px #888888;
+}
+.four {
+  grid-column: 1;
+  grid-row: 2;
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: 5px 10px #888888;
+}
+.five {
+  grid-column: 2;
+  grid-row: 2;
+   
+}
+.six {
+  grid-column: 3;
+  grid-row: 2;
+   
+}
+.cont {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+}
+.project-img {
+  display: block;
+  width: 100%;
+  height: auto;
+  
+}
+
+.over {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .3s ease;
+  background-color:rgb(194, 189, 189);
+  
+}
+
+.cont:hover .over {
+  opacity: 0.8;
+ 
+}
+
+.icon {
+  color: white;
+  font-size: 75px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+  
+}
+
+.fas fa-expand-alt:hover {
+  color: #eee;
+}
+.project-footer{
+  font-weight:bold;
+  position:relative;
+  text-align:center;
+  top:80%;
+  padding:1%;
+  background-color:black;
+  color:white;
+  line-height:2;
+  overflow:none;
+}
+#about{
+   display: flex;
+  justify-content: space-between;
+  padding-top:50px;
+  background:black;
+}
+.left-text .about-text{
+  width:50%;
+  color:white;
+  font-size:170%;
+  line-height:wrap;
+}
+.right-text .about-text{
+  position:relative;
+  display:block;
+  width:50%;
+  left:50%;
+  color:white;
+  font-size:170%;
+  line-height:wrap;
+}
+.bottom-left-text .about-text{
+  width:50%;
+  color:white;
+  font-size:170%;
+  line-height:wrap;
+}
+.profile-link{
+  position:relative;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  color:white;
+  overflow:none;
+  
+}
+.profile-icon{
+ 
+  color: white;
+  font-size: 50px;
+  position: relative;
+  top: 50%;
+  left: 0%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%); 
+  padding:0 10px;
+
+}
+#contact{
+color:white;
+  padding-top:50px;
+  background:rgb(138, 8, 8);
+}
+@media(max-width:500px){
+.masthead-heading{
+  text-align:center;
+}
+.Project-img{
+  width:60%;
+  height:60%;
+}
+}
